@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h1>Javascript</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+<script>
+    class student{
+        constructor(name,rollno,mark1,mark2){
+            this.name=name;
+            this.rollno=rollno;
+            this.mark1=mark1;
+            this.mark2=mark2;
+        }
+        avg(){
+            var average=(this.mark1+this.mark2)/2;
+            return average;
+        }
+    }
+    var std1=new student("ashwitha","22itr010",90,93);
+    var std2=new student("dharani","22itr017",93,85);
+    document.getElementById('demo').innerHTML=std1.name+" " +std1.rollno+" "+std1.mark+"average is "+ std1.avg();
+    document.getElementById('demo1').innerHTML=std2.name+" " +std2.rollno+" "+std2.mark+"average is "+std2.avg();
+    
+        </script>
+</body>
+</html>
